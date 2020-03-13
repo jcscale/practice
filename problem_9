@@ -1,0 +1,23 @@
+using System;
+
+namespace point_of_rectangle2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("enter x: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            bool circle_point = Math.Pow(x, 2) + Math.Pow(y, 2) <= 25 ? true : false;
+            Console.WriteLine("is coordinates ({0},{1}) within the circle? {2}", x, y, circle_point);
+
+            bool rectangle_point = (x >= -1 && x <= 5) && (y >= 1 && y <= 5)? true:false;
+            Console.WriteLine("is coordinates ({0},{1}) within the rectangle? {2}",x,y,rectangle_point);
+
+
+        }
+    }
+}

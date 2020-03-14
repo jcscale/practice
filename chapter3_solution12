@@ -1,0 +1,19 @@
+using System;
+
+namespace chapter3_solution12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter number: ");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("enter position: ");
+            int p = int.Parse(Console.ReadLine());
+
+            int i = 1;
+            int mask = i << p;
+            Console.WriteLine((n & mask) != 0 ? true : false);
+        }
+    }
+}

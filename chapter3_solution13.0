@@ -1,0 +1,20 @@
+using System;
+
+namespace chapter3_solution13._0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter number: ");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("Enter position: ");
+            int p = int.Parse(Console.ReadLine());
+            Console.Write("enter number only 1 and 0: ");
+            int v = int.Parse(Console.ReadLine());
+
+            n = n | (v << p);
+            Console.WriteLine(n);
+        }
+    }
+}
